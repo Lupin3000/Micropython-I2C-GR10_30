@@ -47,7 +47,7 @@ class DFRobot_GR10_30_I2C:
         try:
             self._i2c = I2C(i2c_bus, sda=Pin(sda), scl=Pin(scl))
         except Exception as err:
-            print(print(f'Could not initialize i2c! bus: {i2c_bus}, sda: {sda}, scl: {scl}, error: {err}'))
+            print(f'Could not initialize i2c! bus: {i2c_bus}, sda: {sda}, scl: {scl}, error: {err}')
 
     def _write_reg(self, reg, data) -> None:
         """
