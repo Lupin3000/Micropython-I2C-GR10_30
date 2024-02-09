@@ -14,7 +14,7 @@ def setup(sensor) -> None:
     :param sensor: instance of DFRobot_GR10_30_I2C
     :return: None
     """
-    while not sensor.begin:
+    while not sensor.begin():
         print('Try sensor initialization')
         sleep(1)
 
